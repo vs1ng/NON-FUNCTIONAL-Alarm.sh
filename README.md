@@ -8,15 +8,15 @@ Alarm.sh !
 
 uh here's how to use it
 
-'''md
+```md
 git clone https://github.com/vs1ng/Alarm.sh.git
-'''
+```
 
 then you make it executeable (dw i'll add privalage escalation to it later on)
 
-'''md
+```md
 chmod +x alarm.sh
-'''
+```
 
 then run it 
 
