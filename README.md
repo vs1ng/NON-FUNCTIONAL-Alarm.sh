@@ -12,11 +12,24 @@ uh here's how to use it
 git clone https://github.com/vs1ng/Alarm.sh.git
 ```
 
-then you make it executeable (dw i'll add privalage escalation to it later on)
+then you make ```main.sh``` executeable by running:
 
 ```md
-chmod +x alarm.sh
+chmod +x main.sh
 ```
 
-then run it 
+then run ```./main.sh```
+
+> now , ```main.sh``` will make 1.sh and 2.sh executeable by running 
+
+```chmod +x 1.sh ; chmod +x 2.sh``` 
+
+ then , 
+
+> it starts 2 threads ``` ( 2.sh and 1.sh )``` which will make the whole thing faster 
+
+![image](https://user-images.githubusercontent.com/90449815/185198913-2f07ff56-91ae-4ce8-86cd-67d6f3efe729.png)
+
+
+rest is well..done :grin: 
 
