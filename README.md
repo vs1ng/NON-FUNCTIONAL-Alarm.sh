@@ -25,6 +25,18 @@ then run ```./main.sh```
 ```chmod +x 1.sh ; chmod +x 2.sh``` 
 
  then , 
+> it asks u if u wanna enter Alert mode or not
+
+![image](https://user-images.githubusercontent.com/90449815/185797036-f36f578a-c067-40b5-98d7-05937c5ef7b2.png)
+
+> if u say yes , dis happens and u have to enter the amt of days in ```6d``` or ```$(no. of days)d``` format:
+
+![image](https://user-images.githubusercontent.com/90449815/185797138-83f1373b-ed9c-4b07-b2ba-4c0cd2613072.png)
+
+> it makes a new file with the commands for an alert for the set amt of days and runs it
+
+![image](https://user-images.githubusercontent.com/90449815/185797258-eb8c7945-7915-45df-ac62-d4e6aa3db082.png)
+
 
 > it starts 2 threads ``` ( 2.sh and 1.sh )``` which will make the whole thing faster 
 
