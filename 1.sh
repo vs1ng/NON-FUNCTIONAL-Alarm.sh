@@ -21,6 +21,7 @@ echo -e "
 AAAAAAA                   AAAAAAAllllllll  aaaaaaaaaa  aaaarrrrrrr            mmmmmm   mmmmmm   mmmmmm ......   sssssssssss    hhhhhhh     hhhhhhh $NC"
 echo -e "                                                                 by $Blue $UBlue Vinayak Singh $NC "
 ./container.sh
+./update.sh
 read -p "[?] Enter the time period for this alarm :" TIME
 read -p "[?] Enter the title for the alarm notif : " TITLE
 echo "Waiting for $TIME"

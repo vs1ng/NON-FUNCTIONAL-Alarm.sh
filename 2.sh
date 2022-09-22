@@ -18,12 +18,20 @@ NC='\033[0m'
 UBlue='\033[4;34m'
 function packcheck(){
 	IFEXIST="${dpkg -s zenity | grep "Status"}"
-	if "Status: install ok installed" == "$IFEXIST"
+	if [ "Status: install ok installed" == "$IFEXIST" ];
 	then
 		echo ""
 	else
-		echo -e "$Red [!] Pre-requisites are not installed ; Please install them."
+		echo -e "$Red [!] Pre-requisite 'Zenity' is not installed ; Please install it.."
 		sudo apt install zenity
+	fi
+	BRUH="$(dkpg -s enlightenment | grep "Status")"
+	if [ "Status: install ok installed" == "$BRUH" ];
+	then
+		echo ""
+	else
+		echo -e "$Red [!] Pre-requisite 'Enlightenment' is not installed ; Please install it.."
+		sudo apt install enlightenment
 	fi
 }
 function loadinganim(){
