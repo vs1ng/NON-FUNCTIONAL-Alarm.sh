@@ -77,5 +77,5 @@ echo -e "[!] Reminder made sucessfully , will remind you of $TOTLE in $TILLHUH .
 sleep 3 ; clear 
 bash /home/$USER/Desktop/alrt.sh
 elif [ "$YESORNO" == "0" ]; then
-    echo -e "$Red [~] OKay , Proceeding to $UPurple Mail mode. $NC";
+    echo -e "$Red [~] OKay , Proceeding to $UPurple Update mode. $NC";
 fi

