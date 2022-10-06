@@ -25,15 +25,6 @@ then run ```./main.sh```
 ```chmod +x 1.sh ; chmod +x 2.sh``` 
 
  then , 
-> it ask u if u wanna enter update mode or not
-![image](https://user-images.githubusercontent.com/90449815/191808828-b84e0687-75ef-4a60-a2f6-838ec2b8e991.png)
-
-> if u say yes , itll open to update mode
-
-![image](https://user-images.githubusercontent.com/90449815/191809031-f8537176-2a50-49b2-af03-a9287a266f05.png)
-
-all u has to do is write ```./run.sh``` into the terminal and ur work is done ez
-
 > it asks u if u wanna enter Alert mode or not
 
 ![image](https://user-images.githubusercontent.com/90449815/185797036-f36f578a-c067-40b5-98d7-05937c5ef7b2.png)

