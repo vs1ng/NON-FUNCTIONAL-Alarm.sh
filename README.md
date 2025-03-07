@@ -1,55 +1,75 @@
-# Alarm.sh
-
-Welcome to
-Alarm.sh !
-
-![image](https://user-images.githubusercontent.com/90449815/183894414-af1507db-b5f7-47d2-90bb-bf7bb9aeba68.png)
 
 
-uh here's how to use it
+# Alarm Script
 
-```md
-git clone https://github.com/vs1ng/Alarm.sh.git
+## Overview
+
+`alarm_script.sh` is a simple and efficient Bash script that allows users to set multiple alarms with customizable time periods and notification titles. The script utilizes background processing to enable concurrent alarms, ensuring that multiple timers can run simultaneously without blocking the user interface.
+
+## Features
+
+- **Set Multiple Alarms**: Users can set as many alarms as they want, each with its own time period and notification title.
+- **Background Processing**: Alarms run in the background, allowing for concurrent execution.
+- **Package Management**: The script checks for required packages (`zenity`, `at`, `xdotool`, and `enlightenment`) and installs them if they are missing.
+- **User -Friendly Interface**: Prompts for user input and provides feedback on the status of alarms.
+
+## Prerequisites
+
+Before running the script, ensure that the following packages are installed on your system:
+
+- `zenity`: For displaying graphical notifications.
+- `at`: For scheduling tasks.
+- `xdotool`: For simulating keyboard input and mouse activity.
+- `enlightenment`: A window manager that may be required for certain graphical operations.
+
+The script will automatically check for these packages and prompt for installation if they are not found.
+
+## Installation
+
+1. **Clone or Download the Script**:
+   You can clone the repository or download the script directly.
+
+   ```bash
+   git clone 
+   ```
+
+2. **Make the Script Executable**:
+   Run the following command to make the script executable:
+
+   ```bash
+   chmod +x alarm_script.sh
+   ```
+
+## Usage
+
+1. **Run the Script**:
+   Execute the script in your terminal:
+
+   ```bash
+   ./alarm_script.sh
+   ```
+
+2. **Set Alarms**:
+   - Follow the prompts to enter the time period for the alarm (in seconds) and the title for the notification.
+   - After setting an alarm, you will be asked if you want to set another alarm. Enter `y` to continue or `n` to stop.
+
+3. **Receive Notifications**:
+   When the time for an alarm expires, a notification will appear on your screen with the specified title.
+
+## Example
+
+```bash
+$ ./alarm_script.sh
+Welcome to the Alarm Script!
+[?] Enter the time period for the alarm (in seconds): 10
+[?] Enter the title for the alarm notification: Time to take a break!
+Waiting for 10 seconds...
+[!] Time's up for: Time to take a break!
 ```
 
-then you make ```main.sh``` executeable by running:
+## Contributing
 
-```md
-chmod +x main.sh
-```
-
-then run ```./main.sh```
-
-> now , ```main.sh``` will make 1.sh and 2.sh executeable by running 
-
-```chmod +x 1.sh ; chmod +x 2.sh``` 
-
- then , 
-> it ask u if u wanna enter update mode or not
-![image](https://user-images.githubusercontent.com/90449815/191808828-b84e0687-75ef-4a60-a2f6-838ec2b8e991.png)
-
-> if u say yes , itll open to update mode
-
-![image](https://user-images.githubusercontent.com/90449815/191809031-f8537176-2a50-49b2-af03-a9287a266f05.png)
-
-all u has to do is sit back n watch it goooo
-
-> it asks u if u wanna enter Alert mode or not
-
-![image](https://user-images.githubusercontent.com/90449815/185797036-f36f578a-c067-40b5-98d7-05937c5ef7b2.png)
-
-> if u say yes , dis happens and u have to enter the amt of days in ```6d``` or ```$(no. of days)d``` format:
-
-![image](https://user-images.githubusercontent.com/90449815/185797138-83f1373b-ed9c-4b07-b2ba-4c0cd2613072.png)
-
-> it makes a new file with the commands for an alert for the set amt of days and runs it
-
-![image](https://user-images.githubusercontent.com/90449815/185797258-eb8c7945-7915-45df-ac62-d4e6aa3db082.png)
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
 
 
-> it starts 2 threads ``` ( 2.sh and 1.sh )``` which will make the whole thing faster 
-
-![image](https://user-images.githubusercontent.com/90449815/185198913-2f07ff56-91ae-4ce8-86cd-67d6f3efe729.png)
-
-
-rest is well..done :grin: 
+---
